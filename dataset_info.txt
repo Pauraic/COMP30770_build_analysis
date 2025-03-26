@@ -1,0 +1,156 @@
+About Dataset
+
+This dataset contains Smite match details, organized by day. This comprises of all Season 11 matches across all normal and ranked game modes. Custom game modes have details hidden for 7 days, so these are not captured. Each JSON file is a list of player details, which contains the following columns:
+
+    Account_Level: The player's account level.
+    ActiveId1: The item ID of the player's first active in this game.
+    ActiveId2: The item ID of the player's second active in this game.
+    ActiveId3: The item ID of the player's third active in this game. In practice, this is always zero.
+    ActiveId4: The item ID of the player's fourth active in this game. In practice, this is always zero.
+    ActivePlayerId: The player ID for this given record.
+    Assists: The number of assists this player got in this game.
+    Ban1: If a ranked game mode, the name of the first god or goddess banned.
+    Ban1Id: If a ranked game mode, the ID of the first god or goddess banned.
+    Ban2: If a ranked game mode, the name of the second god or goddess banned.
+    Ban2Id: If a ranked game mode, the ID of the second god or goddess banned.
+    Ban3: If a ranked game mode, the name of the third god or goddess banned.
+    Ban3Id: If a ranked game mode, the ID of the third god or goddess banned.
+    Ban4: If a ranked game mode, the name of the fourth god or goddess banned.
+    Ban4Id: If a ranked game mode, the ID of the fourth god or goddess banned.
+    Ban5: If a ranked game mode, the name of the fifth god or goddess banned.
+    Ban5Id: If a ranked game mode, the ID of the fifth god or goddess banned.
+    Ban6: If a ranked game mode, the name of the sixth god or goddess banned.
+    Ban6Id: If a ranked game mode, the ID of the sixth god or goddess banned.
+    Ban7: If a ranked game mode, the name of the seventh god or goddess banned.
+    Ban7Id: If a ranked game mode, the ID of the seventh god or goddess banned.
+    Ban8: If a ranked game mode, the name of the eighth god or goddess banned.
+    Ban8Id: If a ranked game mode, the ID of the eighth god or goddess banned.
+    Ban9: If a ranked game mode, the name of the ninth god or goddess banned.
+    Ban9Id: If a ranked game mode, the ID of the ninth god or goddess banned.
+    Ban10: If a ranked game mode, the name of the tenth god or goddess banned.
+    Ban10Id: If a ranked game mode, the ID of the tenth god or goddess banned.
+    Ban11: If a ranked game mode, the name of the eleventh god or goddess banned.
+    Ban11Id: If a ranked game mode, the ID of the eleventh god or goddess banned.
+    Ban12: If a ranked game mode, the name of the twelfth god or goddess banned.
+    Ban12Id: If a ranked game mode, the ID of the twelfth god or goddess banned.
+    Camps_Cleared: The number of jungle camps this player cleared in this game.
+    Conquest_Losses: Total number of Ranked Conquest losses this player has had this Ranked split.
+    Conquest_Points: Total number of Ranked Conquest points this player has this Ranked split.
+    Conquest_Tier: This player's Ranked Conquest Tier as of this game.
+    Conquest_Wins: Total number of Ranked Conquest wins this player has had this Ranked split.
+    Damage_Bot: Damage done to minions by this player.
+    Damage_Done_In_Hand: Damage done by in-hand attacks by this player.
+    Damage_Done_Magical: Magical damage dealt by this player.
+    Damage_Done_Physical: Physical damage dealt by this player.
+    Damage_Mitigated: The amount of damage mitigated by this player.
+    Damage_Player: Player damage done by this player.
+    Damage_Taken: The amount of damage taken by this player.
+    Damage_Taken_Magical: The amount of magical damage taken by this player.
+    Damage_Taken_Physical: The amount of physical damage taken by this player.
+    Deaths: The number of deaths this player had this game.
+    Distance_Traveled: The distance this player traveled this match, in units.
+    Duel_Losses: Total number of Ranked Duel losses this player has had this Ranked split.
+    Duel_Points: Total number of Ranked Duel points this player has this Ranked split.
+    Duel_Tier: This player's Ranked Duel Tier as of this game.
+    Duel_Wins: Total number of Ranked Duel wins this player has had this Ranked split.
+    Entry_Datetime: The timestamp this match completed, in UTC. The format is DAY/MONTH/YEAR HOUR:MINUTE:SECOND AM/PM.
+    Final_Match_Level: The level this player reached in this game.
+    First_Ban_Side: If a ranked game mode, the side that got to ban first (Order or Chaos).
+    GodId: The ID of the god this player played.
+    Gold_Earned: The amount of gold this player earned this game.
+    Gold_Per_Minute: The amount of gold this player earned per minute this game.
+    Healing: The healing this player did to their teammates this game.
+    Healing_Bot: The healing this player did to minions this game.
+    Healing_Player_Self: The healing this player did to themself this game.
+    ItemId1: The ID for the first item in this player's build, 0 if no item was built in this slot.
+    ItemId2: The ID for the second item in this player's build, 0 if no item was built in this slot.
+    ItemId3: The ID for the third item in this player's build, 0 if no item was built in this slot.
+    ItemId4: The ID for the fourth item in this player's build, 0 if no item was built in this slot.
+    ItemId5: The ID for the fifth item in this player's build, 0 if no item was built in this slot.
+    ItemId6: The ID for the sixth item in this player's build, 0 if no item was built in this slot.
+    Item_Active_1: The name of the item corresponding to ActiveId1.
+    Item_Active_2: The name of the item corresponding to ActiveId2.
+    Item_Active_3: The name of the item corresponding to ActiveId3.
+    Item_Active_4: The name of the item corresponding to ActiveId4.
+    Item_Purch_1: The name of the item corresponding to ItemId1.
+    Item_Purch_2: The name of the item corresponding to ItemId2.
+    Item_Purch_3: The name of the item corresponding to ItemId3.
+    Item_Purch_4: The name of the item corresponding to ItemId4.
+    Item_Purch_5: The name of the item corresponding to ItemId5.
+    Item_Purch_6: The name of the item corresponding to ItemId6.
+    Joust_Losses: Total number of Ranked Joust losses this player has had this Ranked split.
+    Joust_Points: Total number of Ranked Joust points this player has this Ranked split.
+    Joust_Tier: This player's Ranked Joust Tier as of this game.
+    Joust_Wins: Total number of Ranked Joust wins this player has had this Ranked split.
+    Killing_Spree: The number of killing sprees this player went on this game.
+    Kills_Bot: The number of minion kills this player had this game.
+    Kills_Double: The number of double kills this player got this game.
+    Kills_Fire_Giant: The number of Fire Giants this player killed this game.
+    Kills_First_Blood: Whether or not this player achieved first blood in this game (1 or 0).
+    Kills_Gold_Fury: The number of Gold Furies this player killed this game.
+    Kills_Penta: The number of penta kills this player got this game.
+    Kills_Phoenix: The number of phoenixes this player killed this game.
+    Kills_Player: The total number of player kills this player got this game.
+    Kills_Quadra: The number of quadra kills this player got this game.
+    Kills_Siege_Juggernaut: The number of siege juggernauts this player killed this game.
+    Kills_Single: The number of single kills this player got this game.
+    Kills_Triple: The number of triple kills this player got this game.
+    Kills_Wild_Juggernaut: The number of wild juggernauts this player killed this game.
+    Map_Game: The name of the map this game was played on.
+    Mastery_Level: The mastery level of the god this player played as of this game.
+    Match: The ID of the match.
+    Match_Duration: The match duration in seconds.
+    MergedPlayers: The name of any merged accounts for this player.
+    Minutes: The match duration in minutes.
+    Multi_kill_max: The maximum multi-kill this player got this game.
+    Objective_Assists: The number of objective kills this player participated in.
+    PartyId: If the player is partied, the ID for the party they were a part of.
+    Rank_Stat_Conquest: The player's Ranked Conquest MMR, if applicable.
+    Rank_Stat_Duel: The player's Ranked Duel MMR, if applicable.
+    Rank_Stat_Joust: The player's Ranked Joust MMR, if applicable.
+    Reference_Name: The name of the god this player played.
+    Region: The region this game occurred in.
+    Role: The role this player was assigned, if a conquest game mode.
+    Skin: The name of the skin this player used.
+    SkinId: The ID of the skin this player used.
+    Structure_Damage: The amount of structure damage this player did this game.
+    Surrendered: Whether or not this player's team surrendered.
+    TaskForce: The team this player was a part of (1 or 2).
+    Team1Score: Whether team 1 won (1 or 0).
+    Team2Score: Whether team 2 won (1 or 0).
+    Win_Status: A string indicating "Winner" or "Loser."
+    Winning_TaskForce: The TaskForce that won this game.
+    hasReplay: Whether a replay exists of this game.
+    hz_gamer_tag: The console gamertag for this player.
+    hz_player_name: The player's username.
+    match_queue_id: The queue ID that this match was a part of (see below).
+    name: The name of the queue.
+    playerId: The player ID for this given record.
+    playerName: The player's username.
+    playerPortalId: Corresponds to a portal that this player is playing on (e.g. Steam, Epic, PS4, Xbox, Switch).
+    playerPortalUserId: A user ID that corresponds to the player's ID on their given portal.
+    ret_msg: A message indicating any errors for this record, for example if the user is hiding their profile's visibility.
+
+The following match_queue_ids are a part of this dataset:
+
+Normal Game Modes:
+
+    Arena: 435
+    Assault: 445
+    Conquest: 426
+    Joust: 448
+    Match of the Day (MOTD): 434
+    Slash: 10189
+
+Ranked Game Modes:
+
+    Conquest: 451
+    Duel: 440
+    Joust: 450
+
+Under 30 Game Modes:
+(Under account level 30 players are in separate queues from other players)
+
+    Arena: 10195
+    Conquest: 10193
+    Joust: 10197
