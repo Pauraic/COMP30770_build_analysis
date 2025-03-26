@@ -11,15 +11,21 @@ import pandas as pd
 import json
 import time
 
+threshold = 10 # number of dataset games of specific god
+files = ["match_details_2024-02-20.json",
+         "match_details_2024-02-21.json",
+         "match_details_2024-02-22.json",
+         "match_details_2024-02-23.json",
+         "match_details_2024-02-24.json"]#,"match_details_2024-02-25.json"]
 
 starttime = time.time()
 result_by_god = []
 
-files = ["match_details_2024-02-20.json","match_details_2024-02-21.json","match_details_2024-02-22.json","match_details_2024-02-23.json","match_details_2024-02-24.json"]#,"match_details_2024-02-25.json"]
 
-for file in files:
-    print("working on file: ",file)
-    with open(file,'r') as f:
+for name in files:
+    filepath = f"data/{name}"
+    print("working on file: ",filepath)
+    with open(filepath,'r') as f:
 
         data = json.load(f)
         for record in data:
@@ -33,7 +39,6 @@ print("loading time : ", time.time()-starttime)
 print(f"{len(tempdf)} <- length of df")
 
 starttime = time.time()
-threshold = 10 # number of dataset games of specific god
 filtered = tempdf.groupby("god").filter(lambda x: len(x) >= threshold)
 df = filtered.groupby("god",as_index=False)["winrate"].mean().sort_values(by="winrate",ascending=False)
 
